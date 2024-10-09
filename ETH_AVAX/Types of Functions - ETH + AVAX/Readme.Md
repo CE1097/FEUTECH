@@ -10,9 +10,9 @@ For this project we are tasked to create a token that will fulfill the following
 
 
 # Public Variables
-   string public CoinName = "ECOIN";
-    string public CoinSymbol = "EC";
-    uint public CoinSupply = 0;
+      string public CoinName = "ECOIN";
+      string public CoinSymbol = "EC";
+      uint public CoinSupply = 0;
 
 # Mapping Variables 
    mapping (address => uint amount) public CoinBalances;
