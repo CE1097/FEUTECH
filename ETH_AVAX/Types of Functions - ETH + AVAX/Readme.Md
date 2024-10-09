@@ -20,12 +20,12 @@ For this project we are tasked to create a token that will fulfill the following
 I utilized the use of function keyword to notify external entities regarding specific occurences within the transaction (all functions)
 
 # Mint Function
-  function MintCoin (address from, uint amount ) public {
+     function MintCoin (address from, uint amount ) public {
         CoinSupply += amount;
         CoinBalances [from] += amount;
 
 # Burn Function
- function BurnCoin (address from, uint amount ) public {
+    function BurnCoin (address from, uint amount ) public {
         require (CoinBalances [from] >= amount, "Insufficient Balance to burn");
         CoinSupply -= amount;
         CoinBalances [from] -= amount;
